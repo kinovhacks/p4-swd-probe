@@ -1,0 +1,8 @@
+build/
+sdkconfig.old
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+p4_wire.log
+validation/out/

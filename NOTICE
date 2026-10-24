@@ -1,0 +1,19 @@
+p4-swd-probe
+Copyright 2026 Kinov Hacks (https://kinovhacks.com)
+
+This product includes software developed by ARM Limited as part of CMSIS-DAP:
+
+  Files: vendor/DAP.c, vendor/DAP.h, vendor/SW_DP.c
+  Upstream: https://github.com/ARM-software/CMSIS-DAP
+  Commit: 12636590eec66fae2d1bba4518749426ad5a4595
+  License: Apache-2.0 (vendor/LICENSE)
+
+Modifications: vendor/DAP.h contains ESP32-P4 compiler definitions and a
+RISC-V delay loop in place of the ARM assembly delay. vendor/DAP.c and
+vendor/SW_DP.c are unchanged.
+
+The OpenOCD CMSIS-DAP TCP frame layout was referenced from OpenOCD's
+src/jtag/drivers/cmsis_dap_tcp.c. No OpenOCD source code is included. OpenOCD
+is licensed under GPLv2 and is a separate runtime dependency.
+
+The host bridge depends on pyserial (BSD-3-Clause), which is not bundled.
