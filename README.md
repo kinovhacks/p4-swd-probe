@@ -27,6 +27,8 @@ fix needed a teardown and a J-Link, and I didn't have a J-Link. I did have an
 ESP32-P4 dev board, so I worked with AI to turn it into an SWD probe that
 OpenOCD can drive, and used it to restore the keyboard's firmware myself.
 
+<img src="docs/wiring.jpg" alt="ESP32-P4 board wired as an SWD probe next to the keyboard" width="420">
+
 This repo is that tool, cleaned up so you can use it too. It's part of
 [Kinov Hacks](https://kinovhacks.com): hackable hardware, extended with AI.
 Follow along on [X](https://x.com/kinovhacks) and
